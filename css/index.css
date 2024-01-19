@@ -1,0 +1,184 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+/*HEADER*/
+
+.letras {
+    margin-right: 50px;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.cafeteriaKing {
+    margin-right: 220px;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    color: aliceblue;
+
+}
+.barraimagenes {
+    width: 45px;
+    margin-right: 50px;
+}
+/*HEADER*/
+
+.barracontenida {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+
+
+}
+
+
+
+/*INFORMACION*/
+.frase {
+    background-color: blanchedalmond;
+    font-family: 'Playfair Display', serif;
+    color: #3f3200;
+    font-size: 30px;
+}
+
+/*INFORMACION*/
+.tarjeta {
+    width: 55%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    color: #3f3200;
+    font-family: 'Playfair Display', serif;
+    text-align: justify;
+}
+
+.tarjetaN {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    color: #806600;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+/*MAIN*/
+
+button {
+
+    border: none;
+    padding: 0;
+    background:none;
+    cursor: pointer;
+
+}
+/*MAIN*/
+
+/*SIDEBAR*/
+/*SIDEBAR*/
+
+/*FOOTER*/
+.direccion {
+    width: 1000px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    /* Ajusta el valor según sea necesario */
+}
+.direccion iframe {
+    width: 400px;
+    height: 150px;
+    border: 0;
+}
+.direc {
+
+    color: aliceblue;
+    font-size: 20px;
+
+}
+/*FOOTER*/
+
+
+
+
+
+
+
+
+/*GRID BOOSTRAP*/
+body {
+    min-height: 100vh;
+    padding: 0;
+}
+
+
+
+.grid-container {
+    
+
+    display: grid;
+    grid-template-areas:
+        "header"
+        "blanco"
+        "informacion"
+        "main"
+        
+        "footer";
+    grid-template-rows: auto 80px auto auto auto;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-area: header;
+
+}
+.blanco{
+    grid-area: blanco;
+}
+
+.informacion {
+    grid-area: informacion;
+    
+
+}
+
+.main {
+    grid-area: main;
+ 
+}
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-areas:
+            "header header"
+            "blanco blanco"
+            "informacion main"
+            "informacion main"
+            "footer footer";
+        grid-template-rows: 123px 150px auto auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/menu.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="imagenes/corona.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet" />
+    <title>menu</title>
+</head>
+
+<body class="grid-containerM" style="
+      background-image: url(imagenes/perfecto.jpg);
+      background-size: cover;
+      position: relative;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    ">
+    <header class="Encabezado">
+        <nav class="navbar navbar-expand-lg navbar-white bg-white">
+            <div class="row container-fluid">
+                <!-- Logo -->
+                <div class="col-lg-9 col-md-12 col-sm-12 ">
+                    <h1 class="cafeteriaKing" style="color: black">
+                        <a class="nav-link" href="index.html"><img src="imagenes/corona.png" alt="logo"
+                                style="width: 80px" />
+                            CAFETERÍA KING</a>
+                    </h1>
+                    <br>
+                    <h1>
+                    <!-- Botón de hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> </h1>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 ">
+                    <!-- Menú de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                        <ul class="navbar-nav letras container">
+                            <li class="Reservas">
+                                <img src="imagenes/reservas.png" alt="reservas" class="barraimagenes" />
+                                <a class="nav-link letras" href="reserva.html">Reservas</a>
+                            </li>
+                            <li class="nosotros">
+                                <img src="imagenes/nosotros.png" alt="nosotros" class="barraimagenes" />
+                                <a class="nav-link letras" href="nosotros.html">Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <nav class="redes">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://www.instagram.com/" class="nav-link letrasMenu">
+                        <div>
+                            <button>
+                                <img src="imagenes/instagram.png" alt="instagram"
+                                    style="width: 30px; margin-right: 0px" />
+                            </button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="https://www.facebook.com/?locale=es_LA" class="nav-link letrasMenu">
+                        <div>
+                            <button>
+                                <img src="imagenes/facebook .png" alt="facebook"
+                                    style="width: 30px; margin-right: 0px" />
+                            </button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="https://www.whatsapp.com/?lang=es_LA" class="nav-link letrasMenu">
+                        <div>
+                            <button>
+                                <img src="imagenes/whatsapp.png" alt="whatsapp"
+                                    style="width: 30px; margin-right: 0px" />
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside class="espacio" style="text-align: center">
+        <h1 style="font-size: 75px; color: aliceblue">Nuestro Menú</h1>
+    </aside>
+    
+    <aside class="servicios">
+        <div class="container">
+            <div class="row container" style="height: 450px">
+                <div class="col-lg-3 col-md-3 col-sm-12 menu">
+                    <a href="#Entradas" class="nav-link letrasMenu">
+                        <div class="cuadradoImagen">
+                            <button class="botonimagen">
+                                <img src="imagenes/desayunos.jpeg" alt="Desayuno" style="width: 260px" />
+                                <span class="spanimagen">Entradas</span>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 menu">
+                    <a href="#Sandwiches" class="nav-link letrasMenu">
+                        <div class="cuadradoImagen">
+                            <button class="botonimagen">
+                                <img src="imagenes/sandwiches.jpeg" alt="sandwiches" style="width: 260px" />
+                                <span class="spanimagen">Sandwiches</span>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 menu">
+                    <a href="#Postres" class="nav-link letrasMenu">
+                        <div class="cuadradoImagen">
+                            <button class="botonimagen">
+                                <img src="imagenes/postres.jpeg" alt="postres" style="width: 260px" />
+                                <span class="spanimagen">Postres</span>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 menu">
+                    <a href="#Bebidas" class="nav-link letrasMenu">
+                        <div class="cuadradoImagen">
+                            <button class="botonimagen">
+                                <img src="imagenes/bebida.jpeg" alt="bebidas" style="width: 260px" />
+                                <span class="spanimagen">Bebidas</span>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <article class="Nmenu">
+        
+        <div class="contenedorM">
+            <div class="row container-fluid plato">
+                <h1><br></h1>
+                <h4 class="menuEncabezados" id="Entradas">
+                    Entradas <br />
+                   </h4><h1><br></h1>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Fuerte</b></h4>
+                            <hr />
+                            <h4 class="ingredientes">
+                                arroz blanco / salteado de vegetales / pechuga asada
+                            </h4>
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$4</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row ">
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Canasta de pan con rellenos</b></h4>
+                            <hr />
+                            <h4 class="ingredientes">
+                                mermelada / mantaquilla / dulce de leche 
+                            </h4>
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$5</b>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <h4 class="especialidad">Especialidad</h4>
+                <div class="col-lg-6 col-md-12 col-sm-12 plato">
+                    <div class="row ">
+                        <div class="col-6">
+                            <h4 class="nombreD"> <b>Clásico</b>
+                                <h4  class="ingredientes">Aguacate / huevos revueltos / pan
+                                    tostado / fresa/uvas</h4>
+                            </h4>
+                            <b class="precio">$5</b>
+                        </div>
+
+                        <div class="col-6">
+                            <img class="imagenD" src="imagenes/primerDes.jpg" alt="Clásico" style="width: 150px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 plato">
+                    <div class="row ">
+                        <div class="col-6">
+                            <h4 class="nombreD"> <b>Waffle con mantequilla</b>
+                                <h4  class="ingredientes">Waffle / mantequilla / fresas / uvas</h4>
+                            </h4>
+                            <b class="precio">$5</b>
+                        </div>
+
+                        <div class="col-6">
+                            <img class="imagenD" src="imagenes/segundoDes.jpg" alt="Clásico" style="width: 150px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1><br></h1>
+            
+            <div class="row container-fluid  plato">
+                <h4 class="menuEncabezados" id="Sandwiches">
+                    Sandwiches <br />
+                   </h4><div><br><br></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row container">
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Pollo</b></h4>
+                            <hr />
+                            <h4 class="ingredientes">
+                                pechuga de pollo / tomate / lechuga 
+                            </h4>
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$5</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row container">
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Albondigas </b></h4>
+                            <hr />
+                            <h4 class="ingredientes">
+                                albondigas / queso 
+                            </h4>
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$5</b>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <h4 class="especialidad">Especialidad</h4>
+                <div class="col-lg-6 col-md-12 col-sm-12 plato">
+                    <div class="row container">
+                        <div class="col-6">
+                            <h4 class="nombreD"> <b>Bacon</b>
+                                <h4  class="ingredientes">Bacon / lechuga / tomate</h4>
+                            </h4>
+                            <b class="precio">$2</b>
+                        </div>
+
+                        <div class="col-6">
+                            <img class="imagenD" src="imagenes/primerSa.jpg" alt="Bacon" style="width: 150px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 plato">
+                    <div class="row container">
+                        <div class="col-6">
+                            <h4 class="nombreD"> <b>Manzana</b>
+                                <h4  class="ingredientes">tocino / cheddar / manzana</h4>
+                            </h4>
+                            <b class="precio">$2,50</b>
+                        </div>
+
+                        <div class="col-6">
+                            <img class="imagenD" src="imagenes/segundoSa.jpg" alt="Manzana" style="width: 150px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1><br></h1>
+            
+            <div class="row container-fluid  plato">
+                <h4 class="menuEncabezados" id="Postres"> 
+                    Postres <br />
+                   </h4><div><br><br></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row container">
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Gelatina</b></h4>
+                            <hr />
+                            <h4 class="ingredientes">
+                               frutas en trocitos  
+                            </h4>
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$2</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row container">
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Canasta de donas</b></h4>
+                            <hr />
+                            <h4 class="ingredientes">
+                                diferentes sabores
+                            </h4>
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$5</b>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+                <h4 class="especialidad">Especialidad</h4>
+                <div class="col-lg-6 col-md-12 col-sm-12 plato">
+                    <div class="row container">
+                        <div class="col-6">
+                            <h4 class="nombreD"> <b>Mousse de Tarta</b>
+                                <h4  class="ingredientes">queso / frambuesa</h4>
+                            </h4>
+                            <b class="precio">$1,5</b>
+                        </div>
+
+                        <div class="col-6">
+                            <img class="imagenD" src="imagenes/primerPo.jpg" alt="Tarta" style="width: 150px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 plato">
+                    <div class="row container">
+                        <div class="col-6">
+                            <h4 class="nombreD"> <b>Pastel</b>
+                                <h4  class="ingredientes">chocolate</h4>
+                            </h4>
+                            <b class="precio">$1</b>
+                        </div>
+
+                        <div class="col-6">
+                            <img class="imagenD" src="imagenes/segundoPo.jpg" alt="Clásico" style="width: 150px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1><br></h1>
+            
+            <div class="row container-fluid  plato">
+                <h4 class="menuEncabezados" id="Bebidas">
+                    Bebidas <br />
+                   </h4><div><br><br></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row container">
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Café clásico</b></h4>
+                            <hr />
+                            
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row container">
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Chocolate</b></h4>
+                            <hr />
+                            
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$1.50</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row container" >
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Cáfe Helado</b></h4>
+                            <hr />
+                            
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$2</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row container">
+                        <div class="col-9">
+                            <h4 class="nombreD"><b>Capuchino</b></h4>
+                            <hr />
+                            <h4 class="ingredientes">
+                               
+                            </h4>
+                        </div>
+
+                        <div class="col-3">
+                            <b class="precio">$2.5</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+
+</html>

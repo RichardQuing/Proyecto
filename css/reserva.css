@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+/*HEADER*/
+
+.letras {
+    margin-right: 50px;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.reserva{color:darkgoldenrod;text-align: center;}
+
+.cafeteriaKing {
+    margin-right: 220px;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    color: aliceblue;
+
+}
+.barraimagenes {
+    width: 45px;
+    margin-right: 50px;
+}
+.menu {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.nosotros {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Playfair Display', serif;
+
+}
+/*HEADER*/
+/*NAV*/
+button {
+
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    
+    
+}
+/* .navbar-nav.letras>li:not(:last-child) {
+    
+
+    height: 95px;
+} */
+/*NAV*/
+
+/*MAIN*/
+/*MAIN*/
+/*FOOTER*/
+.direccion {
+    width: 1000px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    /* Ajusta el valor según sea necesario */
+}
+.direccion iframe {
+    width: 400px;
+    height: 150px;
+    border: 0;
+}
+.direc {
+
+    color: aliceblue;
+    font-size: 20px;
+
+}
+/*FOOTER*/
+
+
+
+
+
+
+
+
+/*GRID BOOSTRAP*/
+body {
+    min-height: 100vh;
+    padding: 0;
+}
+
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "blanco"
+        "main"
+        "footer";
+    grid-template-rows: 150PX 80px auto auto auto;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-area: header;
+    
+
+}
+.nav {
+    grid-area: nav;
+    background-color: black;
+    display: flex;
+        align-items: center;
+        height: 100%;
+
+}
+.blanco{
+    grid-area: blanco;
+    
+}
+
+.main {
+    grid-area: main;
+    background-color: brown;
+    border: solid darkgoldenrod;;
+    
+ 
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-areas:
+            "header nav"
+            "blanco blanco"
+            "main main"
+            "footer footer";
+        grid-template-rows: 123px 150px auto auto;
+        grid-template-columns: auto 250px;
+    }
+}

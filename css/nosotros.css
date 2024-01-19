@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    
+}
+.cafeteriaKing {
+    margin-right: 220px;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    color: aliceblue;
+
+}
+.letras {
+    margin-right: 50px;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.menu {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Playfair Display', serif;
+
+}
+.nosotros {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Playfair Display', serif;
+
+}
+.barraimagenes {
+    width: 45px;
+    margin-right: 50px;
+}
+.tarjetaN {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    color: #806600;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.frase {
+    background-color: blanchedalmond;
+    font-family: 'Playfair Display', serif;
+    color: #3f3200;
+    font-size: 30px;
+}
+.tarjeta {
+    width: 55%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    color: #3f3200;
+    font-family: 'Playfair Display', serif;
+    text-align: justify;
+}
+
+
+body {
+    min-height: 100vh;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "blanco"
+        "sidebar"
+        "main"
+        "aparte"
+        "footer"
+
+    ;
+    grid-template-rows: auto 50px 80px auto auto auto auto;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-area: header;
+    background-color: aliceblue;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.blanco {
+    grid-area: blanco;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+}
+
+.main {
+    grid-area: main;
+
+}
+
+.aparte {
+    grid-area: aparte;
+
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "header header"
+            "blanco blanco"
+            "navbar navbar"
+            "sidebar main"
+            "sidebar main"
+            "aparte aparte"
+            "footer footer"
+        ;
+        grid-template-rows: auto auto auto auto auto 300px auto;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-areas:
+            "header header header navbar "
+            "blanco blanco blanco blanco"
+            "sidebar sidebar main main"
+            "aparte aparte main main"
+            "aparte aparte main main"
+            "footer footer footer footer";
+        grid-template-rows: 123px 100px 452px 250px 21px auto;
+        grid-template-columns: 500px auto auto 250px;
+    }
+}

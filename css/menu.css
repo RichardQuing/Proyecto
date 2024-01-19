@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+   
+
+}
+
+/*HEADER*/
+
+.letras {
+    margin-right: 50px;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.reserva {
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+.cafeteriaKing {
+    margin-right: 220px;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    color: aliceblue;
+
+}
+
+.barraimagenes {
+    width: 45px;
+    margin-right: 50px;
+}
+
+.menu {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.nosotros {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Playfair Display', serif;
+
+}
+
+/*HEADER*/
+/*NAV*/
+button {
+
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+
+
+}
+
+/*NAV*/
+
+/*MAIN*/
+.cuadradoImagen {
+    position: relative;
+    display: inline-block;
+}
+
+.botonimagen {
+    position: relative;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.spanimagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+/*MAIN*/
+/*MENU*/
+.menuEncabezados {
+    font-family: 'Salsa', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
+.ingredientes {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+.nombreD{
+    font-size: 30px;
+}
+.precio{
+    color: darkgoldenrod;
+    font-size: 30px;
+}
+.especialidad{
+    font-family: 'Salsa', cursive;
+    text-align: left;
+    font-size: 40px;
+    color: brown;
+}
+
+/*MENU*/
+/*PIE*/
+.direccion {
+    width: 1000px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+
+}
+
+.direccion iframe {
+    width: 400px;
+    height: 150px;
+    border: 0;
+}
+
+.direc {
+
+    color: aliceblue;
+    font-size: 20px;
+
+}
+
+/*PIE*/
+
+
+
+
+
+
+
+
+/*GRID BOOSTRAP*/
+body {
+    min-height: 100vh;
+    padding: 0;
+}
+
+
+
+.grid-containerM {
+
+    display: grid;
+    grid-template-areas:
+        "Encabezado"
+        "redes"
+        "espacio"
+        "servicios"
+        "Nmenu";
+    grid-template-rows: auto auto 80px auto auto;
+    grid-template-columns: 1fr;
+}
+
+.Encabezado {
+    grid-area: Encabezado;
+
+
+}
+
+.redes {
+    grid-area: redes;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.espacio {
+    grid-area: espacio;
+
+}
+
+.servicios {
+    grid-area: servicios;
+
+
+}
+
+.Nmenu {
+    grid-area: Nmenu;
+    background-color: aliceblue;
+}
+
+@media (min-width: 992px) {
+    .grid-containerM {
+        grid-template-areas:
+            "Encabezado redes"
+            "espacio espacio"
+            "servicios servicios"
+            "Nmenu Nmenu";
+        grid-template-rows: auto 150px auto auto;
+        grid-template-columns: auto 250px;
+    }
+}
