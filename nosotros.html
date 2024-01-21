@@ -15,37 +15,47 @@
     style="background-image: url(imagenes/perfecto.jpg); background-size: cover; position: relative; background-attachment: fixed; background-repeat: no-repeat;">
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <nav class="navbar navbar-expand-lg   bg-white">
+
             <div class="row container-fluid">
-                <!-- Logo -->
-                <div class="col-9 ">
-                    <h1 class="cafeteriaKing" style="color: black;">
-                        <a class="nav-link" href="index.html"><img src="imagenes/corona.png" alt="logo"
-                                style="width: 80px;"> CAFETERÍA KING</a>
 
-                    </h1>
+                <div class="col-7">
 
-                    <!-- Botón de hamburguesa -->
+                    <a class="navbar-brand" href="index.html"><img src="imagenes/corona.png" alt="logo"
+                            style="width: 80px" />CAFETERÍA KING</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                 </div>
-                <!-- Menú de navegación -->
-                <div class="col-3  collapse navbar-collapse " id="navbarColor02">
-                    <ul class="navbar-nav letras container ">
-                        <li class="menu">
-                            <img src="imagenes/menu.png" alt="menu" class="barraimagenes">
-                            <a class="nav-link letras" href="menu.html">Menú</a>
-                        </li>
-                        <li class="Reservas">
-                            <img src="imagenes/reservas.png" alt="reservas" class="barraimagenes" />
-                            <a class="nav-link letras" href="reserva.html">Reservas</a>
+                <div class="col-5 collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                        
+                            <a class="nav-link active" aria-current="page" href="reserva.html"><img src="imagenes/reservas.png" alt="reservas" class="barraimagenes" /><br> Reservas</a>
+                          </li>
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href=".dropdown-menu" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="imagenes/menu.png" alt="menu" class="barraimagenes" /><br>Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="entrada.html">Entradas</a></li>
+                                <li><a class="dropdown-item" href="sandwiches.html">Sandwiches</a></li>
+                                <li><a class="dropdown-item" href="postres.html">Postres</a></li>
+                                <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
+
+
         </nav>
     </header>
     <nav class="navbar">

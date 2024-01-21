@@ -4,215 +4,253 @@
     padding: 0;
     font-family: 'Playfair Display', serif;
    
-
 }
+/**/
+.a{
+    text-decoration: none;
+}
+
+
+
+/**/
 
 /*HEADER*/
+.imagenCafe {
+    width: 80px
+}
 
-.letras {
-    margin-right: 50px;
-    font-size: 17px;
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*PEDIDO*/
+.letra {
+    font-size: 18px;
     text-align: center;
+    color: aliceblue
+}
+
+.repartidor {
+    width: 50px
+}
+
+.ordena {
+    background: linear-gradient(to right, rgb(143, 201, 85), #215c03);
+    width: 100%;
+    height: 200px;
+    border-radius: 70px;
+}
+
+.por {
+    font-family: 'Lobster', sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.whatsapp {
+    width: 125px
+}
+
+/*INSTALACIONES*/
+.card.text-center {
+    background-color: darkgoldenrod;
+     width: 100%;
+}
+
+.con.card-header {
+    font-size: 35px;
+    color: #ffffff;
+    font-family: 'Lobster', sans-serif;
 
 }
 
-.reserva {
+.btn.btn-primary {
+    background-color: #ffffff;
+    border: black;
     color: darkgoldenrod;
+}
+
+.imagenD {
+    width: 300px;
+    border-radius: 150px;
+    
+}
+
+/*MENU*/
+.nombreD {
+    font-size: 30px;
+    background-color: cadetblue;
+}
+
+.imagenE {
+    width: 200px;
+    border-radius: 100px;
+    
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
     text-align: center;
+    font-family: arial;
 }
 
-.cafeteriaKing {
-    margin-right: 220px;
-    font-size: 25px;
-    font-family: 'Playfair Display', serif;
-    color: aliceblue;
-
+.price {
+    color: grey;
+    font-size: 22px;
 }
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
 
 .barraimagenes {
     width: 45px;
     margin-right: 50px;
 }
 
-.menu {
-    width: 60%;
-    padding: 10px;
-    border: none;
-    box-sizing: border-box;
-    color: black;
-    font-family: 'Playfair Display', serif;
-
+.platoE {
+    display: grid;
+    place-items: center;
 }
 
-.nosotros {
-    width: 60%;
-    padding: 10px;
-    border: none;
-    box-sizing: border-box;
-    color: black;
-    font-family: 'Playfair Display', serif;
-
+.flip-box {
+    background-color: transparent;
+    width: 200px;
+    height: 338px;
+    border: 1px solid #ffffff;
+    perspective: 1000px;
 }
 
-/*HEADER*/
-/*NAV*/
-button {
 
-    border: none;
-    padding: 0;
-    background: none;
-    cursor: pointer;
-
-
-}
-
-/*NAV*/
-
-/*MAIN*/
-.cuadradoImagen {
+.flip-box-inner {
     position: relative;
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-.botonimagen {
-    position: relative;
-    border: none;
-    background: none;
-    padding: 0;
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
 }
 
-.spanimagen {
+
+.flip-box-front,
+.flip-box-back {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 50px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
-/*MAIN*/
-/*MENU*/
+
+.flip-box-front {
+
+    color: black;
+}
+
+
+.flip-box-back {
+    background-color: brown;
+    color: white;
+    transform: rotateY(180deg);
+}
+
 .menuEncabezados {
     font-family: 'Salsa', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 
+    100px;
 }
 
 .ingredientes {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
 }
-.nombreD{
-    font-size: 30px;
-}
-.precio{
+
+.precio {
     color: darkgoldenrod;
     font-size: 30px;
 }
-.especialidad{
+
+.especialidad {
     font-family: 'Salsa', cursive;
     text-align: left;
     font-size: 40px;
     color: brown;
 }
 
-/*MENU*/
-/*PIE*/
-.direccion {
-    width: 1000px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-
-}
-
-.direccion iframe {
-    width: 400px;
-    height: 150px;
-    border: 0;
-}
-
-.direc {
-
-    color: aliceblue;
-    font-size: 20px;
-
-}
-
-/*PIE*/
-
-
-
-
-
-
-
-
-/*GRID BOOSTRAP*/
 body {
     min-height: 100vh;
     padding: 0;
+
 }
-
-
 
 .grid-containerM {
 
     display: grid;
     grid-template-areas:
-        "Encabezado"
-        "redes"
-        "espacio"
-        "servicios"
-        "Nmenu";
-    grid-template-rows: auto auto 80px auto auto;
+        "encabezado"
+        "pedido"
+        "escribenos"
+        "instalaciones"
+        "Nmenu"
+      ;
+
+    grid-template-rows: auto auto auto auto auto ;
     grid-template-columns: 1fr;
 }
 
-.Encabezado {
-    grid-area: Encabezado;
+.encabezado {
+    grid-area: encabezado;
+}
 
+.pedido {
+    grid-area: pedido;
+    background-color: rgb(143, 201, 85);
+    border: 5px solid white;
+}
+
+.escribenos {
+    grid-area: escribenos;
 
 }
 
-.redes {
-    grid-area: redes;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    height: 100%;
-
+.instalaciones {
+    grid-area: instalaciones;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
 }
-
-.espacio {
-    grid-area: espacio;
-
-}
-
-.servicios {
-    grid-area: servicios;
-
-
-}
-
 .Nmenu {
     grid-area: Nmenu;
     background-color: aliceblue;
 }
 
+
 @media (min-width: 992px) {
     .grid-containerM {
         grid-template-areas:
-            "Encabezado redes"
-            "espacio espacio"
-            "servicios servicios"
+            "encabezado encabezado"
+            "pedido pedido"
+            "escribenos instalaciones"
             "Nmenu Nmenu";
-        grid-template-rows: auto 150px auto auto;
-        grid-template-columns: auto 250px;
+        grid-template-rows: 101px 60px auto auto ; 
+        grid-template-columns: auto auto;
     }
 }
