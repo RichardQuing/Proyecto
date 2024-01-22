@@ -141,7 +141,7 @@ body {
 
 .main {
     grid-area: main;
-    background-color: brown;
+    background-color: rgba(10, 9, 9, 0.63);
     border: solid darkgoldenrod;;
     
  

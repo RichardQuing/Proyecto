@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/repartidor.css">
+    <link rel="shortcut icon" href="imagenes/corona.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>index</title>
+</head>
+
+<body class="grid-container" style="
+background-image: url(imagenes/perfecto.jpg);
+background-size: cover;
+position: relative;
+background-attachment: fixed;
+background-repeat: no-repeat;
+">
+    <header class="header">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="row container-fluid">
+
+                <div class="col-7">
+
+                    <a class="navbar-brand" href="index.html"><img src="imagenes/corona.png" alt="logo"
+                            style="width: 80px" />CAFETERÍA KING</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+                <div class="col-5 collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+
+                            <a class="nav-link active" aria-current="page" href="reserva.html"><img
+                                    src="imagenes/reservas.png" alt="reservas" class="barraimagenes" /><br> Reservas</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="nosotros.html"><img src="imagenes/nosotros.png" alt="nosotros"
+                                    class="barraimagenes" /><br> Nosotros</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href=".dropdown-menu" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="imagenes/menu.png" alt="menu" class="barraimagenes" /><br>Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="entrada.html">Entradas</a></li>
+                                <li><a class="dropdown-item" href="sandwiches.html">Sandwiches</a></li>
+                                <li><a class="dropdown-item" href="postres.html">Postres</a></li>
+                                <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+
+    </header>
+    <section class="informacin" style="background-color: rgba(0, 255, 255, 0.552);border: 2px solid black;">
+    <main class="mai">
+        <div class="reserv" style="text-align: center;">
+            <form action="#" method="">
+                <h1>UNETE A NUESTRO EQUIPO</h1>
+                <br><br>
+                <label for="INombre"><b>NOMBRE:</b></label>
+                <br>
+                <input type="text" id="INombre" name="ombre" placeholder="" required>
+                <br><br>
+                <label for="IApellido"><b>APELLIDO:</b></label>
+                <br>
+                <input type="text" id="IApellido" name="pellido" placeholder="" required>
+                <br><br>
+                <label for="Iemail"><b>EMAIL:</b></label>
+                <br>
+                <input type="text" id="Iemail" name="mail" placeholder="" required>
+                <br><br>
+                <label for="telefono"><b>TELEFONO:</b></label>
+                <br><br>
+                <input type="text" id="telefono" name="tel" required>
+                <br><br>
+                <label for="iciudad"><b>CIUDAD:</b></label>
+                <br>
+                <input type="text" id="iciudad" name="ciudad" placeholder="" required>
+                <br><br><br>
+                <!-- botones -->
+                <div class="d-grid gap-2 col-2 mx-auto">
+                    <button type="submi" class="bt btn-outline-warning">
+                        Enviar
+                        <img src="imagenes/cafe.png" alt="grano" style="width: 20px">
+                    </button>
+                </div>
+                <br><br>
+            </form>
+            <br>
+        </div>
+    </main>
+</section>
+    <footer class="footer" style="background-color: black;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-12">
+                    <h1 class="cafeteriaKing" style="color: aliceblue;">
+                        <img src="imagenes/corona.png" alt="logo" style="width: 80px" />
+                        <br><br>CAFETERÍA KING
+                    </h1>
+                    <hr />
+                    <h1 style="font-size: 16px; color: aliceblue">
+                        <b><i>Direccion:</i> </b><br />
+                        Av. de la República 170515 <br>Alba Calderón 170902<br><br>Quito Ecuador <br />
+                        <br /><b><i>Servicio al cliente:</i></b><br />
+                        +593142365239 <br /><br /><b><i>Email:</i></b><br />cafeteriaking@gmail.com
+                    </h1>
+                    <p><br /></p>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h1 class="container-fluid direc" style="color: aliceblue;">
+                        <br /><b><i>COMO LLEGAR:</i></b>
+                        <hr />
+                        <br />
+                    </h1>
+                    <hr />
+                    <div class="container direccion">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d747.2424841333083!2d-78.48599824052049!3d-0.1905786343022911!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1705083872407!5m2!1ses!2sec"
+                            width="600" height="450" style="border: 0;width: 300px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Omitir bootstrap.bundle.min.js si no es necesario -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
