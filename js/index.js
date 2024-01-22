@@ -27,3 +27,31 @@ const botonElemento = document.getElementById('cafesito');
 
 
 botonElemento.classList.add('btn', 'btn-outline-warning');
+
+document.addEventListener("DOMContentLoaded", function () {
+    let form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+        let nombre = document.getElementById('IdNombre').value;
+        let apellido = document.getElementById('IdApellido').value;
+        let email = document.getElementById('Idemail').value;
+
+       
+        if (!/^[A-Za-z]+$/.test(nombre) || !/^[A-Za-z]+$/.test(apellido)) {
+            alert('Nombre y apellido solo deben contener letras.');
+            event.preventDefault();
+            return;
+        }
+
+      
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Formato de correo electrónico inválido.');
+            event.preventDefault();
+            return;
+        }
+
+      
+
+    });
+});

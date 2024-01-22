@@ -70,7 +70,9 @@
     font-family: 'Playfair Display', serif;
     text-align: justify;
 }
-
+.checked {
+    color: orange;
+  }
 
 body {
     min-height: 100vh;
@@ -123,7 +125,7 @@ body {
 
 .aparte {
     grid-area: aparte;
-
+background-color: aliceblue;
 
 }
 
@@ -154,10 +156,10 @@ body {
             "header header header navbar "
             "blanco blanco blanco blanco"
             "sidebar sidebar main main"
-            "aparte aparte main main"
-            "aparte aparte main main"
+            ". . main main"
+            "aparte aparte aparte aparte"
             "footer footer footer footer";
-        grid-template-rows: 123px 100px 452px 250px 21px auto;
+        grid-template-rows: 123px 100px 452px 250px auto auto;
         grid-template-columns: 500px auto auto 250px;
     }
 }
